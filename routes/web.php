@@ -12,7 +12,7 @@
 */
 
 $router->get('/', function () use ($router) {
-    return json_encode(DB::table('users')->get());
+    return file_get_contents('../resources/views/index.html');
 });
 
 $router->group(['prefix' => 'api'], function () use ($router) {
