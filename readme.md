@@ -55,7 +55,7 @@ Vagrant Provisioning Script if you want to set up your own vagrant VM.
 
 ## Setting up your own server to play with postman
 
-I've made this repository "portable" with Vagrant VM provisioning. Download [Vagrant](https://www.vagrantup.com/) and simply run `vagrant up` to start a local server and create a test account. Take note of the port number that the web server binds to (it should be :8000)
+I've made this repository "portable" with Vagrant VM provisioning. Download [Vagrant](https://www.vagrantup.com/) and simply run `vagrant up` to start a local server and automatically run provisioning scripts to create test accounts (creating the vm may take a few minutes). Take note of the port number that the web server binds to (it should be :8000), then visit http://localhost:8000 to verify it is working.
 
 > *Note:* If your VM fails to start because of networking issues, you may need to edit the IP Address in the Homestead.yaml file to one on a different subnet of your host device
 
